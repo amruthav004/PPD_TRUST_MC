@@ -1,0 +1,63 @@
+{
+  "package": "PPD-TRUST-MC",
+  "profile": "manuscript",
+  "globals": {
+    "RANDOM_STATE": 42,
+    "MANUSCRIPT_RUN": true,
+    "OUTER_FOLDS": 5,
+    "OUTER_REPEATS": 5,
+    "INNER_FOLDS": 3,
+    "META_FOLDS": 5,
+    "SELECT_K": 64,
+    "CORE_K": 40,
+    "PHQ2_CUTOFF": 3,
+    "PHQ9_CUTOFF": 10,
+    "EPDS_CUTOFF": 13,
+    "EARLY_MONTH_MIN": 2,
+    "EARLY_MONTH_MAX": 6,
+    "N_BOOT": 2000,
+    "RUN_DEEP_BASELINES": true,
+    "RUN_EXTENDED_ANALYSES": true,
+    "ABLATION_REPEATS": 5,
+    "ROBUSTNESS_SEEDS": [
+      7,
+      21,
+      42
+    ],
+    "FT_EPOCHS": 40,
+    "TABTRANSFORMER_EPOCHS": 60,
+    "TABM_EPOCHS": 60,
+    "TABNET_EPOCHS": 60,
+    "TABPFN_ESTIMATORS": 16,
+    "TABPFN_CORE_ESTIMATORS": 12,
+    "TABICL_CHECKPOINT": "tabicl-classifier-v1-20250208.ckpt",
+    "TABICL_ESTIMATORS": 8,
+    "TABICL_BATCH_SIZE": 4
+  },
+  "model_parameters": {
+    "tabpfn_estimators": 16,
+    "core_estimators": 12,
+    "core_features": 40,
+    "inner_folds": 3,
+    "meta_folds": 5,
+    "max_counterfactual_domains": 5,
+    "alpha_negative": 0.1,
+    "alpha_positive": 0.05,
+    "minimum_triage_coverage": 0.5,
+    "target_singleton_sensitivity": 0.9,
+    "use_core": true,
+    "use_xgboost": true,
+    "use_logistic": false,
+    "use_counterfactual": true,
+    "use_reliability": true,
+    "random_state": 42
+  },
+  "data": {
+    "primary_csv": "data/PPD_dataset_v2.csv",
+    "external_tab": "data/LTM III national.tab"
+  },
+  "output": {
+    "result_dir": "results/ppd_trust_mc_tabpfn3_fixed_median_results"
+  },
+  "drop_proximal_affect": false
+}

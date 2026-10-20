@@ -1,0 +1,82 @@
+{
+  "FTTransformerSklearn": {
+    "d": 40,
+    "heads": 4,
+    "layers": 3,
+    "drop": 0.12,
+    "epochs": 40,
+    "lr": 0.0009,
+    "batch": 64,
+    "patience": 12,
+    "seed": 42
+  },
+  "TabNetSklearn": {
+    "n_d": 24,
+    "n_a": 24,
+    "n_steps": 5,
+    "gamma": 1.4,
+    "lambda_sparse": 0.0001,
+    "epochs": 60,
+    "patience": 18,
+    "batch": 256,
+    "virtual_batch": 64,
+    "lr": 0.02,
+    "seed": 42
+  },
+  "TabTransformerSklearn": {
+    "n_bins": 16,
+    "d": 48,
+    "heads": 4,
+    "layers": 3,
+    "drop": 0.15,
+    "epochs": 60,
+    "lr": 0.0008,
+    "batch": 64,
+    "patience": 16,
+    "weight_decay": 0.0002,
+    "seed": 42
+  },
+  "TabMSklearn": {
+    "k": 32,
+    "hidden": [
+      256,
+      256
+    ],
+    "drop": 0.1,
+    "epochs": 60,
+    "lr": 0.002,
+    "batch": 128,
+    "weight_decay": 0.0001,
+    "patience": 12,
+    "seed": 42
+  },
+  "XGBoost": {
+    "n_estimators": 450,
+    "learning_rate": 0.035,
+    "max_depth": 4,
+    "min_child_weight": 3,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 1.5,
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "tree_method": "hist",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "Penalized logistic regression": {
+    "penalty": "l2",
+    "C": 1.0,
+    "class_weight": null,
+    "solver": "liblinear",
+    "max_iter": 3000,
+    "random_state": 42
+  },
+  "TabICL-v1": {
+    "checkpoint": "tabicl-classifier-v1-20250208.ckpt",
+    "n_estimators": 8,
+    "batch_size_cuda": 4,
+    "batch_size_cpu": 2,
+    "calibration": "SafeCrossFittedCalibrator, conditional logistic on logits"
+  }
+}
