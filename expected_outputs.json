@@ -1,0 +1,28 @@
+{
+  "status": "Names extracted from Stage 20; outputs are not bundled.",
+  "files": [
+    "primary_discrimination.csv",
+    "threshold_performance.csv",
+    "calibration_results.csv",
+    "paired_comparisons.csv",
+    "conformal_triage.csv",
+    "conformal_triage_records.csv",
+    "epds_secondary_outcome.csv",
+    "subgroup_results.csv",
+    "reliability_quartiles.csv",
+    "domain_sensitivity.csv",
+    "expert_inner_performance.csv",
+    "feature_stability_scores.csv",
+    "ablation_results.csv",
+    "robustness_results.csv",
+    "robustness_raw.csv",
+    "transportability_results.csv",
+    "external_status.csv",
+    "model_card.json"
+  ],
+  "other_runtime_artifacts": [
+    "Nested-CV, ablation and stress-test pickle checkpoints",
+    "Stage PNG plots"
+  ],
+  "training_weights": "Stage 20 does not serialize FINAL_MODEL weights."
+}

@@ -1,0 +1,103 @@
+{
+  "scope": "Named fields used explicitly by the notebook, not a complete raw-data codebook.",
+  "fields": [
+    {
+      "name": "PHQ9 Score",
+      "role": "primary endpoint",
+      "rule": "Numeric coercion; retain nonmissing; positive at >=10."
+    },
+    {
+      "name": "EPDS Score",
+      "role": "secondary endpoint",
+      "rule": "Numeric coercion; positive at >=13."
+    },
+    {
+      "name": "sr",
+      "role": "excluded predictor",
+      "rule": "Removed before feature engineering."
+    },
+    {
+      "name": "PHQ9 Result",
+      "role": "excluded predictor",
+      "rule": "Removed before feature engineering."
+    },
+    {
+      "name": "EPDS Result",
+      "role": "excluded predictor",
+      "rule": "Removed before feature engineering."
+    },
+    {
+      "name": "Age",
+      "role": "numeric predictor",
+      "rule": "Explicitly retained as numeric by engineer_features."
+    },
+    {
+      "name": "Number of the latest pregnancy",
+      "role": "numeric predictor",
+      "rule": "Explicitly retained as numeric by engineer_features."
+    },
+    {
+      "name": "Number of household members",
+      "role": "numeric predictor",
+      "rule": "Explicitly retained as numeric by engineer_features."
+    },
+    {
+      "name": "Feeling about motherhood",
+      "role": "proximal affect predictor",
+      "rule": "Retained under default configuration."
+    },
+    {
+      "name": "Angry after latest child birth",
+      "role": "proximal affect predictor",
+      "rule": "Retained under default configuration."
+    },
+    {
+      "name": "Feeling for regular activities",
+      "role": "proximal affect predictor",
+      "rule": "Retained under default configuration."
+    },
+    {
+      "name": "Education Level",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Husband’s monthly income",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Marital status",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Total children",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Mode of delivery",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Breastfeed",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Pregnancy plan",
+      "role": "harmonization source field"
+    },
+    {
+      "name": "Residence",
+      "role": "subgroup field"
+    },
+    {
+      "name": "Family type",
+      "role": "subgroup field"
+    },
+    {
+      "name": "Depression_Screener_S",
+      "role": "external endpoint",
+      "rule": "Retain codes 1 and 2; positive code 2."
+    }
+  ],
+  "general_engineering_rule": "Other columns with >=80% numeric parseability and <=20 unique numeric values become code_<integer> categories.",
+  "category_codebook": "No complete source codebook supplied with the notebook."
+}

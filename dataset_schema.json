@@ -1,0 +1,86 @@
+{
+  "primary": {
+    "filename": "PPD_dataset_v2.csv",
+    "format": "CSV with header",
+    "observed_source_shape": [
+      800,
+      51
+    ],
+    "shape_evidence": "Saved stream output in source cell 4; shape precedes target filtering.",
+    "required_endpoint_columns": [
+      "PHQ9 Score",
+      "EPDS Score"
+    ],
+    "target_filter": "Drop rows with PHQ9 Score unparseable or missing; reset index.",
+    "primary_target": {
+      "column": "PHQ9 Score",
+      "operator": ">=",
+      "cutoff": 10,
+      "negative": 0,
+      "positive": 1
+    },
+    "secondary_target": {
+      "column": "EPDS Score",
+      "operator": ">=",
+      "cutoff": 13,
+      "missing_handling_in_source": "Missing EPDS compares false and becomes 0; no separate exclusion."
+    },
+    "excluded_predictors": [
+      "sr",
+      "PHQ9 Score",
+      "PHQ9 Result",
+      "EPDS Score",
+      "EPDS Result"
+    ],
+    "proximal_predictors": [
+      "Feeling about motherhood",
+      "Angry after latest child birth",
+      "Feeling for regular activities"
+    ],
+    "drop_proximal_affect": false,
+    "continuous_columns": [
+      "Age",
+      "Number of the latest pregnancy",
+      "Number of household members"
+    ],
+    "predictor_selection": "Every input column except exclusions; complete raw column list is not embedded.",
+    "survey_weights": "Unit weights; no survey weights loaded."
+  },
+  "external": {
+    "filename_aliases": [
+      "LTM III national.tab",
+      "LTM_III_national.tab"
+    ],
+    "format": "Tab-separated with header",
+    "optional": true,
+    "target_column": "Depression_Screener_S",
+    "eligible_codes": [
+      1,
+      2
+    ],
+    "positive_code": 2,
+    "onehot_prefixes": [
+      "Age_of_Mother",
+      "Education",
+      "HH_Income",
+      "Marital_Status",
+      "No_of_Times_Given_Birth",
+      "Type_of_Birth",
+      "Infant_Feeding",
+      "Pregnancy_Intendedness"
+    ],
+    "harmonized_predictors": [
+      "age_band",
+      "education",
+      "income",
+      "marital",
+      "parity",
+      "cesarean",
+      "breastfed",
+      "planned"
+    ],
+    "mapping_status": "Notebook mappings require confirmation against the LTM codebook.",
+    "scope": "Cross-national transportability with a different endpoint and eight harmonized predictors."
+  },
+  "raw_datasets_included": false
+}

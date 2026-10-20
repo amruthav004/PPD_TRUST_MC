@@ -1,0 +1,44 @@
+{
+  "model_name": "PPD-TRUST-MC",
+  "record_type": "Architecture and configuration, not a fitted-model export",
+  "primary_task": "Classification of probable depression defined by PHQ-9 >=10",
+  "experts": [
+    "TabPFN-3-full",
+    "TabPFN-3-stable-core",
+    "XGBoost"
+  ],
+  "counterfactual_contribution": "Median of full-expert predictions under selected domain substitutions; appended to expert probabilities before final median.",
+  "consensus": "Fixed median; three expert probabilities plus counterfactual median under defaults",
+  "calibration": "Cross-fitted logistic regression on logits, retained only if acceptance checks pass",
+  "triage": "Class-conditional prediction sets followed by reliability referral",
+  "model_parameters": {
+    "tabpfn_estimators": 16,
+    "core_estimators": 12,
+    "core_features": 40,
+    "inner_folds": 3,
+    "meta_folds": 5,
+    "max_counterfactual_domains": 5,
+    "alpha_negative": 0.1,
+    "alpha_positive": 0.05,
+    "minimum_triage_coverage": 0.5,
+    "target_singleton_sensitivity": 0.9,
+    "use_core": true,
+    "use_xgboost": true,
+    "use_logistic": false,
+    "use_counterfactual": true,
+    "use_reliability": true,
+    "random_state": 42
+  },
+  "foundation_model_version": "ModelVersion.V3",
+  "trained_artifacts_included": false,
+  "fitted_values": {
+    "threshold": null,
+    "q_negative": null,
+    "q_positive": null,
+    "reliability_cutoff": null,
+    "calibration_accepted": null
+  },
+  "fitted_values_note": "Computed by fitting; unavailable as serialized model artifacts in the upload.",
+  "external_scope": "Eight-feature harmonized LTM III transportability; outcome differs from primary endpoint.",
+  "source_notebook_revision": "tabicl-v1-safe-counterfactual-v2"
+}

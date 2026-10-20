@@ -1,0 +1,116 @@
+{
+  "outer_cv": {
+    "method": "StratifiedKFold",
+    "folds": 5,
+    "repeats": 5,
+    "shuffle": true,
+    "seed_for_repeat": "42 + repeat, repeat=0..4",
+    "aggregation": "Mean of available out-of-fold predictions for each participant."
+  },
+  "inner_cv": {
+    "folds": 3,
+    "purpose": "Expert OOF predictions, support and counterfactual signals"
+  },
+  "meta_cv": {
+    "folds": 5,
+    "purpose": "Cross-fitted logistic calibration of logit consensus"
+  },
+  "discrimination": [
+    "AUROC",
+    "AUPRC (average_precision_score)"
+  ],
+  "calibration": {
+    "method": "Conditional logistic regression on logit probabilities",
+    "C": 10000.0,
+    "max_iter": 3000,
+    "acceptance": [
+      "Brier strictly decreases",
+      "ECE increases by no more than 0.002",
+      "AUPRC decreases by no more than 0.001"
+    ],
+    "ece_bins": 10,
+    "ece_binning": "Equal-count partitions after sorting probabilities"
+  },
+  "bootstrap": {
+    "iterations": 2000,
+    "sampling": "Participant-level, class-stratified, with replacement",
+    "ci_quantiles": [
+      0.025,
+      0.975
+    ],
+    "paired_comparisons": "Shared bootstrap index for proposed and comparator probabilities",
+    "pvalue": "Two-sided empirical AUPRC tail proportion, floored at 1/N_BOOT; Holm adjustment across comparators"
+  },
+  "threshold_evaluation": {
+    "method": "Five-fold cross-fitting on participant-averaged OOF predictions",
+    "candidates": "199 probability quantiles from 0.01 to 0.99",
+    "objective": "Balanced accuracy, then sensitivity, then specificity"
+  },
+  "model_predict_threshold": "Separate internal ROC Youden threshold fitted to inner probabilities",
+  "conformal": {
+    "alpha_negative": 0.1,
+    "alpha_positive": 0.05,
+    "scores_negative": "p",
+    "scores_positive": "1-p",
+    "quantile": "ceil((n+1)*(1-alpha)), clipped to [1,n]",
+    "decision_codes": {
+      "negative": 0,
+      "positive": 1,
+      "refer": -1
+    },
+    "referral": "Empty or two-class set, or uncertainty above selected reliability cutoff",
+    "coverage_note": "Nominal class error settings do not establish empirical coverage or a separate split-conformal guarantee."
+  },
+  "reliability": {
+    "weights": {
+      "entropy": 0.3,
+      "expert_disagreement": 0.25,
+      "domain_instability": 0.2,
+      "support_distance": 0.15,
+      "missingness": 0.1
+    },
+    "minimum_triage_coverage": 0.5,
+    "target_singleton_sensitivity": 0.9,
+    "minimum_accepted_count": 30,
+    "selection_fallback": "If sensitivity target is infeasible, select among remaining eligible candidates; if none, cutoff=1."
+  },
+  "stable_core": {
+    "features": 40,
+    "bootstrap_repeats": 5,
+    "ranking": "MI mean/(1+MI SD) * (1-missing_fraction)^1.5"
+  },
+  "stress_tests": {
+    "missingness_levels": [
+      0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "numeric_noise_sd_multipliers": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "seeds": [
+      7,
+      21,
+      42
+    ],
+    "application": "Perturb held-out fold only; train on unchanged training fold."
+  },
+  "subgroups": {
+    "minimum_n": 50,
+    "minimum_each_class": 8,
+    "bootstrap_iterations": 600
+  },
+  "source_cells": [
+    14,
+    16,
+    18,
+    20,
+    24,
+    26,
+    32,
+    34
+  ]
+}

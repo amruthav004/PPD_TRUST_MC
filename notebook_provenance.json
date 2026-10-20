@@ -1,0 +1,371 @@
+{
+  "uploaded_filename": "PPD_TRUST_MC_Final(1).ipynb",
+  "sha256": "be98dbcfca6607abed2b51bffa49c8bdf083b13fa82c6a9075bcf1fb6bfa2ca3",
+  "notebook_format": [
+    4,
+    5
+  ],
+  "kernel": {
+    "display_name": "Python 3",
+    "name": "python3"
+  },
+  "source_python": "3.12",
+  "source_accelerator": "GPU",
+  "source_colab_gpu": "T4",
+  "cell_count": 43,
+  "cells": [
+    {
+      "index": 0,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 1,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 2,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 3
+    },
+    {
+      "index": 3,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 4,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 3
+    },
+    {
+      "index": 5,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 6,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 7,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 8,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 9,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 10,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 11,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 12,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 3
+    },
+    {
+      "index": 13,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 14,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 15,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 16,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 7
+    },
+    {
+      "index": 17,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 18,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 4
+    },
+    {
+      "index": 19,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 20,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 21,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 22,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 3
+    },
+    {
+      "index": 23,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 24,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 25,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 26,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 2
+    },
+    {
+      "index": 27,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 28,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 1
+    },
+    {
+      "index": 29,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 30,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 31,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 32,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 33,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 34,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 35,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 36,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 37,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 38,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 39,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 40,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 41,
+      "type": "markdown",
+      "execution_count": null,
+      "saved_output_count": 0
+    },
+    {
+      "index": 42,
+      "type": "code",
+      "execution_count": null,
+      "saved_output_count": 0
+    }
+  ],
+  "stages": [
+    {
+      "cell": 0,
+      "heading": "# PPD-TRUST-MC"
+    },
+    {
+      "cell": 1,
+      "heading": "## Stage 0 — Environment and Configuration"
+    },
+    {
+      "cell": 3,
+      "heading": "## Stage 1 — Dataset Assembly"
+    },
+    {
+      "cell": 5,
+      "heading": "## Stage 2 — Target Definition and Leakage Audit"
+    },
+    {
+      "cell": 7,
+      "heading": "## Stage 3 — Leakage-Safe Feature Representation"
+    },
+    {
+      "cell": 9,
+      "heading": "## Stage 4 — Clinical Feature Domains"
+    },
+    {
+      "cell": 11,
+      "heading": "## Stage 5 — Comparator Model Library"
+    },
+    {
+      "cell": 13,
+      "heading": "## Stage 6 — PPD-TRUST-MC Architecture"
+    },
+    {
+      "cell": 15,
+      "heading": "## Stage 7 — Repeated Nested Cross-Validation"
+    },
+    {
+      "cell": 17,
+      "heading": "## Stage 8 — Primary Discrimination"
+    },
+    {
+      "cell": 19,
+      "heading": "## Stage 9 — Threshold Performance"
+    },
+    {
+      "cell": 21,
+      "heading": "## Stage 10 — Calibration"
+    },
+    {
+      "cell": 23,
+      "heading": "## Stage 11 — Paired Statistical Comparison"
+    },
+    {
+      "cell": 25,
+      "heading": "## Stage 12 — Class-Conditional Conformal Triage"
+    },
+    {
+      "cell": 27,
+      "heading": "## Stage 13 — Decision-Curve Analysis"
+    },
+    {
+      "cell": 29,
+      "heading": "## Stage 14 — Ablation Study"
+    },
+    {
+      "cell": 31,
+      "heading": "## Stage 15 — Robustness Analysis"
+    },
+    {
+      "cell": 33,
+      "heading": "## Stage 16 — Secondary EPDS Outcome and Subgroup Evaluation"
+    },
+    {
+      "cell": 35,
+      "heading": "## Stage 17 — External Validation: LTM III National (Harmonized Cross-National Transportability)"
+    },
+    {
+      "cell": 37,
+      "heading": "## Stage 18 — External Validation Summary and Interpretive Caveats"
+    },
+    {
+      "cell": 39,
+      "heading": "## Stage 19 — Reliability and Feature Stability"
+    },
+    {
+      "cell": 41,
+      "heading": "## Stage 20 — Result Export"
+    }
+  ],
+  "clean_notebook_changes": [
+    "Removed saved outputs, execution counts and widget metadata.",
+    "Code and markdown source unchanged."
+  ],
+  "package_validation": "Structural and helper checks only; full training not rerun."
+}
