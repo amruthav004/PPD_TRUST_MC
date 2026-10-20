@@ -1,0 +1,146 @@
+{
+  "package": "PPD-TRUST-MC supplementary files",
+  "source_notebook_sha256": "be98dbcfca6607abed2b51bffa49c8bdf083b13fa82c6a9075bcf1fb6bfa2ca3",
+  "clean_source_sha256_by_cell": {
+    "0": "dd446a0dd710b082b648c76ff9c653c5d0c2800a65aaaea2bb3e6b5f7aecdafd",
+    "1": "59960047e7428f9f26a264b55a79ff211d19c42bfb63caeb5069bd0af79b0b7c",
+    "2": "0790783caac548eaffee304391c0b44cae04124bf1ee81c666a5cb461ad76775",
+    "3": "bfac6e0fe74916bba1e5ab8649c5f5357fbbed90e354948f704803e5684f94e0",
+    "4": "635ca6ba8021a75dec85640d4a940f0ec523565583f716868a45802223666f70",
+    "5": "a6be090f6a12cab200346378658f304dfab1bcf44b68e4e0424fc5d77bba70b7",
+    "6": "a467d16e6a595e7da674a073646fb09d0d323a009585c13d25ecdc461d3e8c0a",
+    "7": "1cf9893db5a08cb3bb7f9ee6b5a865e259ac3ad533dab91df63f0a7db6e11470",
+    "8": "c3505e5049a5e34558c88baebf5ef40f1b12eb7a3a528f8925c4821a601771d3",
+    "9": "aa99191e7df07ce3fb3387ed34cc49f766a57f3262132a5e24932b9a2706e7b0",
+    "10": "7fc17b7ce94547fa80c69aadf7ee4e51546d8b01b524f7b9ca335e384cbcd253",
+    "11": "87c8bc3daa20ca1001587926cc7128ca2ade32a7b5c65e4557b9767bd708c0ab",
+    "12": "be1fd805ed00755a976bf2be6e9b02ad168ffbae7d4ad4ba5decc8e18e6b1d2b",
+    "13": "e6898cf4a31575b9cb2d244decf11680bbabf6c1ec7d117e709837bacd8157ae",
+    "14": "f7d8bc94d9af7bc64acee8dd005bd523ebd9e0d534c35a0314e4f9aa986d5d30",
+    "15": "f476b5f492f665c08aad2479b1996fc47eb5a73270e8fae83c0d03761e30762e",
+    "16": "9751fd27217db4dc72bace3f226fd4bc7a80fb0e23b0e410997b0fe8359c9b56",
+    "17": "30ed67079e18748dcd1047810015520a2e0f1c6814e498864f381b45c04bd539",
+    "18": "a671fc45af0e71936bea9c3782dd925f2c474bee4415336cb67e7b5d4efac373",
+    "19": "a850aa935de150b9ba6939097d732c783692e48bb85fc61d047cda465b951ded",
+    "20": "054bc614accd9806e46ca3e8d5a44e65cbb0edbea665746703dd54c791a23ac2",
+    "21": "a556c262f5bf17a29a8ca7ee7e2ebd2b4045bd917f2c1f4f53c02153cfb6f2c7",
+    "22": "4405511d0113f7368b70b110d834e139cc563e9143203070925f151bbeadcc37",
+    "23": "643e9cbd3424d1ca58393dba215f5203c141a4cd00fb2eaf0cebd0a8079016fe",
+    "24": "6484223c2bdc434ce40e451b742cbb0d5ba7861806f7bdbf0fda01ec8ca43403",
+    "25": "b40b914702e68f27c876142920e38d868671f34bc76e7bf162edae4f723784d8",
+    "26": "a0e054b50445c784477909b837f03650ef7062e3054ed52fec1e092de9f9a805",
+    "27": "4df2cca7b1d34cb58c53cb89c6910a03f136584682338297b035975c9e80dcfd",
+    "28": "711d0989c647059da8df70c54597ed31d7d4a2830f27545dd7401f78721beb35",
+    "29": "af32f8d52d369e30a06bbfef72918a5531e307f7b4d81c7e8d7f0b71ec4cea3f",
+    "30": "a7da654a3666d2c5f8ea120b7917039ae7d7414262fde56419fa87e04840b6f3",
+    "31": "7bbeade92db63c246326f629dc34dd4e2ab6c628c5c2b095bc55978a5027d6d8",
+    "32": "c5d6dfc96e2b081e7474095a5950d19a4ebbe8ba271e630cafd90114fcc5b25d",
+    "33": "c311dacc71961b11f5d09d9d14fa35bf1af462ee5fef5351ea601e6f1a4bb213",
+    "34": "7843e0531ef12cf431a1a7ef53c6ac2f3cd70415525b3bbf17035445d06c287c",
+    "35": "a4e568c455242e91bb18d3295a441054279572c68a9f4d0715250b45bb6a5566",
+    "36": "2582a36698774649c8fbf3ff17796487421b2427dd349058f98944927b6b0c42",
+    "37": "d1589b702409f0a20005128d3dc9157c678bc33354b7f4a443e36d2a854aa52a",
+    "38": "414a1c00cd4ba4375b3840c5b044adf788fe058ec81fe4a5dd0b545d8eb97f3c",
+    "39": "0e427475a6a2dec163c8c9541d7e436bb2e37f351ffeb63e0de9f511771cae42",
+    "40": "90668765bf645f83cc109ade57fc7b1ff48d0c5be90ef7dc0d74ee900676df68",
+    "41": "2629d25b4fc825ceb42ca6b6bb8956e37b1fa0ff259c82f21cfe94721fc61c37",
+    "42": "9e34316c9eea895804e55acc60b10eec3f93f4e7b7d286755e16dcc3c73613c2"
+  },
+  "files": [
+    {
+      "path": "DATA_ACCESS.md",
+      "bytes": 1590,
+      "sha256": "c8fd54ad277a04a02bc7cf8e69268dad2da50e1e9e33fcd3e8348e4a9773e5ef"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3829,
+      "sha256": "56c9e7c875dab30f650a3b31c75f62bde48e6baea1184ea55b2b0dc67e518b28"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "bytes": 3372,
+      "sha256": "1dce980b914f1e41fb6fc9db0390b4e269d45ab4fe80a978b6ecee19284aeafd"
+    },
+    {
+      "path": "config/comparator_parameters.json",
+      "bytes": 1603,
+      "sha256": "67225244183282a61a2189f2cd4bf3592e2a5168adacf5cc03c76b18fefb3558"
+    },
+    {
+      "path": "config/config.json",
+      "bytes": 1549,
+      "sha256": "ae0884d29cc8952d30b72abbfedd15d039f64c7149f0eb565200ce5581ef6106"
+    },
+    {
+      "path": "config/config.yaml",
+      "bytes": 1233,
+      "sha256": "71ce04fec6ab999327af8be83c26484d3677d40469fd7d7067046e948f34d966"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 667,
+      "sha256": "b23ba9f6bcac9bf87dd5eb69eecac568f308805187c7b09a114c2249aa9d8038"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 120,
+      "sha256": "5781fed2f929cab345d4e42dcd9a7ef7addf031e6f1cea6539ffa7e8b3bafc7d"
+    },
+    {
+      "path": "metadata/data_dictionary.json",
+      "bytes": 2843,
+      "sha256": "0eaf265ef33b82b569c010b0d3c1f80730ad2e58b1612ac27f08c57dc2bd46d8"
+    },
+    {
+      "path": "metadata/dataset_schema.json",
+      "bytes": 2315,
+      "sha256": "682a22a15622bb5bb13c6e3d56f0a4854d07bd687f2d9619b30896e7a94e6011"
+    },
+    {
+      "path": "metadata/expected_outputs.json",
+      "bytes": 844,
+      "sha256": "4afd056a19110deddf0fddc9ee461107f954fd956e90b8a76a8c497810492471"
+    },
+    {
+      "path": "metadata/model_card.json",
+      "bytes": 1739,
+      "sha256": "e68b2312cf7280c64cfd339fe4c000f67e58ee2fa6e39e05471a2eb9e0682c18"
+    },
+    {
+      "path": "metadata/notebook_provenance.json",
+      "bytes": 7722,
+      "sha256": "b9a2f1114faec5736faab7e980857b78ba31b3e8dfe4b7cf5b3b622287ac8ae7"
+    },
+    {
+      "path": "metadata/validation_protocol.json",
+      "bytes": 3238,
+      "sha256": "13987a8c680c7dac7cde9aea89cb4e1e3c56b26db4615acf1fd753d7870cc2be"
+    },
+    {
+      "path": "notebooks/PPD_TRUST_MC.ipynb",
+      "bytes": 173395,
+      "sha256": "b78bbca62ce69b809b52aff415949b217906b4d6f6e039523f28c344dbc52631"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 236,
+      "sha256": "7ae4fd48f40b4e5275ca41d431625aba0dbe3f9fed61979a0233d7698dca41e8"
+    },
+    {
+      "path": "scripts/capture_environment.py",
+      "bytes": 1018,
+      "sha256": "077e6120bcd1aceb3944474ea99564e588211c3309042401713ac2c0fd3c96f9"
+    },
+    {
+      "path": "scripts/prepare_notebook.py",
+      "bytes": 4034,
+      "sha256": "895e6030a58eda49081f1b4c36cc8b87d846d63ee0384df7cf7e05b80a00d7cf"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 1312,
+      "sha256": "ee58a5629a84047ac212b8ededaeb5e28de89501916de843bdd1422337639b02"
+    }
+  ]
+}

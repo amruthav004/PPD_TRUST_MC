@@ -1,0 +1,18 @@
+# Notebook installation constraint retained; other versions are not recorded.
+tabpfn>=8.1,<9
+tabicl
+numpy
+pandas
+scipy
+scikit-learn
+torch
+matplotlib
+ipython
+jupyterlab
+nbformat
+nbclient
+ipykernel
+xgboost
+pytorch-tabnet
+shap
+statsmodels
